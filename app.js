@@ -4,7 +4,9 @@ const mongoose= require('mongoose');
 
 
 // middleware
-  
+app.use('/posts',()=> {
+    console.log('middleware')
+}) ;  
 
 // routes
 app.get('/',(req,res)=> {
